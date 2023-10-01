@@ -5,83 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Anastasiia, resume">
     <meta name="description" content="Это сайт-резюме Анастасии Павловой">
+    <link rel="stylesheet" href="resume.css">
     <title>Anastasiia Resume</title>
 </head>
 <body>
-    <img src="https://sun1-83.userapi.com/impg/fEpWr69keVQ-Cv_8NnaA3_LDnBhTe6USvggu4A/JLyBKjmQfcs.jpg?size=861x1080&quality=95&sign=d4d9f9cd54dc580a2edda03d74eb98a2&type=album" width="250" alt="Здесь должно быть мое фото">
     
-    <h1>Анастасия Павлова</h1>
+    <div class="container">
     
-    <hr>
+
+        <div class="info">
+         <img src="https://sun1-83.userapi.com/impg/fEpWr69keVQ-Cv_8NnaA3_LDnBhTe6USvggu4A/JLyBKjmQfcs.jpg?size=861x1080&quality=95&sign=d4d9f9cd54dc580a2edda03d74eb98a2&type=album" class="avatar" alt="Здесь должно быть мое фото">
+        
+
+         <div class="info-text">
+         
+             <h1>Анастасия Павлова</h1>
    
-    <p>Я студент университета <strong>МПГУ</strong> 1 курса факультета <strong><em>юриспруденция</em></strong></p>
+             <p>Я студент университета <strong>МПГУ</strong> 1 курса факультета <strong><em>юриспруденция</em></strong></p>
 
-    <p>7 лет я занимаюсь мини-футболом и имею <em>первый взрослый разряд</em>, а сейчас хочу учиться <em>программированию</em>.</p>
+             <p>7 лет я занимаюсь мини-футболом и имею <em>первый взрослый разряд</em>, а сейчас хочу учиться <em>программированию</em></p>
 
-    <p><h2><strong>Мои хобби</strong></h2></p>
+             <h3>Социальные сети</h3>
+         
+             <a href="https://vk.com/pvlncks" target="_blank">ВКонтакте</a>
+             
+         </div>
+        </div>
     
-    <ul>
-        <li>Мини-футбол</li>
-        <li>Пабг (мобильная игра)</li>
-        <li>Программирование</li>
-        <li>Тренажерный зал</li>
-        <li>Прогулки по вечерам</li>
-    </ul>
-
-    <hr>
-
-    <p><h2><strong>Опыт работы</strong></h2></p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ресторан "Перчини"</td>
-                <td>Официант</td>
-                <td>2022</td>
-            </tr>
-            <tr>
-                <td>Флоулав</td>
-                <td>Менеджер</td>
-                <td>2023</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="card hobby">
+         <h2>Мои хобби</h2>
     
-    <hr>
-
-    <p><h3><strong>Социальные сети</strong></h3></p>
-
-    <p>
-        <a href="https://vk.com/pvlncks" target="_blank">ВКонтакте</a>
-    </p>
-
-    <br>
-
-    <p><h3><strong>Связаться со мной</strong></h3></p>
-
-    <form>
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
+            <ul class="list">
+             <li>Мини-футбол</li>
+             <li>Пабг (мобильная игра)</li>
+             <li>Программирование</li>
+             <li>Тренажерный зал</li>
+             <li>Прогулки по вечерам</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id="email" placeholder="Введите email"> 
+        <div class="card work">
+         <h2>Опыт работы</h2>
+        
+         <table>
+             <!-- <thead>
+                 <tr>
+                     <th>Название</th>
+                     <th>Должность</th>
+                     <th>Год</th>
+                 </tr>
+             </thead> -->
+            <tbody>
+                <tr>
+                     <td>Ресторан "Перчини"</td>
+                     <td>Официант</td>
+                     <td>2022</td>
+                </tr>
+                <tr>
+                     <td>Флоулав</td>
+                     <td>Менеджер</td>
+                     <td>2023</td>
+                </tr>
+            </tbody>
+         </table>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="15" placeholder="Введите сообщение"></textarea>
-        </div>
-        <button type="submit">Отправить</button>
-     </form>
+   
+         <form class="form">
+             <h3>Связаться со мной</h3>
+             
+             <div class="form-row">
+                 <div class="form-group">
+                     <label for="text">Ваше имя:</label>
+                     <input type="text" id="text" placeholder="Введите имя">
+                 </div>
+
+                 <div class="form-group">
+                     <label for="email">Ваш email:</label>
+                     <input type="email" id="email" placeholder="Введите email"> 
+                 </div>
+             </div>
+             
+             <div class="form-group">
+                 <label for="message">Ваше сообщение:</label>
+                 <textarea id="message" cols="30" rows="15" placeholder="Введите сообщение"></textarea>
+             </div>
+             <button type="submit" class="btn">Отправить</butto>
+         </form>
+    
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    </div>
 </body>
 </html>
